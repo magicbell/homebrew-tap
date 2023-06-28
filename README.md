@@ -1,11 +1,18 @@
-# Magicbell-io Magicbell
+# MagicBell Brew Formulas
 
 ## How do I install these formulae?
 
-`brew install magicbell-io/magicbell/<formula>`
+```
+brew install magicbell-io/magicbell/magicbell-cli
+```
 
-Or `brew tap magicbell-io/magicbell` and then `brew install <formula>`.
+Or
+
+```
+brew tap magicbell-io/magicbell
+brew install magicbell-cli
+```
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Please see [@magicbell/cli](https://github.com/magicbell-io/magicbell-js/tree/main/packages/cli)
