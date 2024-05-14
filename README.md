@@ -2,14 +2,8 @@
 
 ## How do I install these formulae?
 
-```
-brew install magicbell-io/magicbell/magicbell-cli
-```
-
-Or
-
-```
-brew tap magicbell-io/magicbell
+```shell
+brew tap magicbell-io/tap
 brew install magicbell-cli
 ```
 
