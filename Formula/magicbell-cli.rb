@@ -3,8 +3,8 @@ require "language/node"
 class MagicbellCli < Formula
   desc "Work with MagicBell from the command-line"
   homepage "https://magicbell.com"
-  url "https://registry.npmjs.org/@magicbell/cli/-/cli-3.1.1.tgz"
-  sha256 "e5b546f03ad7df5447c282458dae65954a7963fdadba9851e058551115e854e8"
+  url "https://registry.npmjs.org/@magicbell/cli/-/cli-3.2.4.tgz"
+  sha256 "1a7981144e10aac04207d9ccb45760901941cc294a4f320da6fea8f80aea4250"
   license :cannot_represent # SEE LICENSE IN LICENSE
 
   livecheck do
