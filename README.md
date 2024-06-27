@@ -3,10 +3,10 @@
 ## How do I install these formulae?
 
 ```shell
-brew tap magicbell-io/tap
+brew tap magicbell/tap
 brew install magicbell-cli
 ```
 
 ## Documentation
 
-Please see [@magicbell/cli](https://github.com/magicbell-io/magicbell-js/tree/main/packages/cli)
+Please see [@magicbell/cli](https://github.com/magicbell/magicbell-js/tree/main/packages/cli)
