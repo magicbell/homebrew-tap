@@ -17,3 +17,15 @@ jobs:
         run: brew install --include-test --formula Formula/magicbell-cli.rb
       - name: Test
         run: brew test magicbell-cli
+
+  merge:
+    needs: test
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.user.login == 'MagicBella' }}
+    steps:
+      - name : merge
+        uses : nbrugger-tgm/merge-pr-action@v0.2.3
+        with :
+          pull_request: ${{ github.event.pull_request.number }}
+          token: ${{ secrets.BELLA_ACTION_TOKEN }}
+          method: squash
