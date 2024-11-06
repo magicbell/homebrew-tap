@@ -1,0 +1,16 @@
+
+name: CI
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install formula
+        run: brew install --include-test --formula Formula/magicbell-cli.rb
+      - name: Test
+        run: brew test magicbell-cli
