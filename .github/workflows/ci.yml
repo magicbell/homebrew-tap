@@ -27,5 +27,5 @@ jobs:
         uses : nbrugger-tgm/merge-pr-action@v0.2.3
         with :
           pull_request: ${{ github.event.pull_request.number }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.BELLA_ACTION_TOKEN }}
           method: squash
