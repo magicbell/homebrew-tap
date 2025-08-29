@@ -5,21 +5,21 @@
 class MagicbellCli < Formula
   desc "MagicBell CLI."
   homepage "https://www.magicbell.com"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.2/magicbell-cli_Darwin_x86_64.tar.gz"
-      sha256 "c0125215f7e7d7f619092167da4d4a9781c6486e63cc6bf9e55b7b7b366f4ded"
+      url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.3/magicbell-cli_darwin_amd64.tar.gz"
+      sha256 "fa00ff74b15804550f1b5871b4aadfac433b37e076f3aecc67e15f15473701b7"
 
       def install
         bin.install "magicbell"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.2/magicbell-cli_Darwin_arm64.tar.gz"
-      sha256 "930aa6acc62958c88451aee7f76148db5cd64bedad2427240effffcf12972873"
+      url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.3/magicbell-cli_darwin_arm64.tar.gz"
+      sha256 "61e2a51b4a9b1f36720c547d13b2466d263ae9347d7d8420beb5a9cd604ddeea"
 
       def install
         bin.install "magicbell"
@@ -29,15 +29,15 @@ class MagicbellCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.2/magicbell-cli_Linux_x86_64.tar.gz"
-      sha256 "57b1ffc5efb7d2df3719a45c631b2b38eaa12ac6b47976e5afe55a78fb45e5cf"
+      url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.3/magicbell-cli_linux_amd64.tar.gz"
+      sha256 "78108ab19fa8a467a94a96df060e01546747ffb1d597c6ff023709603ff6e8df"
       def install
         bin.install "magicbell"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.2/magicbell-cli_Linux_arm64.tar.gz"
-      sha256 "6d5d3d5fbfa4936f8c0777fe0a43a9f1e2dc5f685301601b0d6e5430f109baf6"
+      url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.3/magicbell-cli_linux_arm64.tar.gz"
+      sha256 "cdc1494cc97fc43dbd110bcac273c49470d10280d90b1be8864ad16468bb7b4c"
       def install
         bin.install "magicbell"
       end
