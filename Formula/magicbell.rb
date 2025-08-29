@@ -11,7 +11,7 @@ class Magicbell < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.1/magicbell-cli_Darwin_x86_64.tar.gz"
-      sha256 "44c59da179140479d5ab2e6a83d63baaac112390b5e5c2225ec5348f74657530"
+      sha256 "93ea80ec8e7bea03ef6a83fbcac3d847d10a07e7dad094d2babda4a64c9deb8b"
 
       def install
         bin.install "magicbell"
@@ -19,7 +19,7 @@ class Magicbell < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.1/magicbell-cli_Darwin_arm64.tar.gz"
-      sha256 "397199bc30fc35f21db55e3d14a682d6fc18caaec57d1e1d4243301a623db5bb"
+      sha256 "43a7a836d42dade0286cd72ab37e8bbb55052969351a230386ee72acc2d91ed9"
 
       def install
         bin.install "magicbell"
@@ -30,14 +30,14 @@ class Magicbell < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.1/magicbell-cli_Linux_x86_64.tar.gz"
-      sha256 "19ef9ab0e3d0374408d7f30b68dfe53beb53057a7db8fc1083af55b7cf73598f"
+      sha256 "5fbe00c0287d7264fe6abe5cbbcf5edb32f5009e6be621def366c0cd6a5d95e6"
       def install
         bin.install "magicbell"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/magicbell/homebrew-tap/releases/download/v0.0.1/magicbell-cli_Linux_arm64.tar.gz"
-      sha256 "fb472965a8b36afa68e3cf4795c2b18937e69a8cbe1bd31cc5f0456d3eb159b7"
+      sha256 "7e912da262f3c73e1d0b932d82e8b5fbb86cc86b2e5960c544300762cc979b36"
       def install
         bin.install "magicbell"
       end
